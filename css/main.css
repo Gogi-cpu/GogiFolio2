@@ -1,7 +1,7 @@
 :root {
   --theme-color: #F2E8CF;
   --primary-color: #386641;
-  --secundary-color: #7a2527;
+  --secundary-color: #8f2022;
   --text-color-inverse: white;
   --text-color: black;
   --navbar-shallow-color: #6A994E;
@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  text-align: justify;
 }
   
 section[id] {

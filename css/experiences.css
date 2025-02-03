@@ -8,16 +8,7 @@
   color: var(--text-color-inverse);
 }
 
-.wave {
-  width: 100%;
-  position: relative;
-  top: 2px;
-}
 
-.wave_bottom {
-  transform: scaleY(-1);
-  top: -2px;
-}
 
 .experiences-title {
   text-align: center;
@@ -31,6 +22,7 @@
   font-size: 25px;
   font-weight: bold;
   color: var(--secundary-color);
+  text-align: left;
 }
 
 .experience-company {
