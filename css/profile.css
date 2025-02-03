@@ -65,6 +65,7 @@
     width: 100%;
     max-width: 350px;
     transform: scaleX(-1);
+    box-shadow: 0 4px 5px var(--navbar-shallow-color)
   }
   
   .profile {
