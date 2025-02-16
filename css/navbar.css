@@ -1,7 +1,7 @@
 .topheader {
-  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.486);
   position: fixed;
-  background-color: var(--theme-color);
+  background-color: var(--primary-color);
   left: 0;
   top: 0;
   width: 100%;
@@ -43,7 +43,7 @@
 }
 
 .menu a {
-  color: var(--text-color);
+  color: white;
   font-size: 18px;
   font-weight: 500;
   line-height: 50px;
@@ -53,7 +53,7 @@
 
 .menu a::after {
   content: "";
-  background-color: var(--secundary-color);
+  background-color: red;
   position: absolute;
   left: 0;
   top: calc(100% + 4px);
@@ -70,7 +70,7 @@
 }
 
 .menu a:hover {
-  color: var(--primary-color);
+  color: black;
 }
 
 .open-menu,
