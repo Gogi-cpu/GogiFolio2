@@ -8,6 +8,11 @@
 .profile-img {
   width: 80%;
   max-width: 300px;
+  border-radius: 180px;
+  border-style: solid;
+  border-color: #386641;
+  border-width: 5px;
+  
 }
 
 .profile-img-section {
