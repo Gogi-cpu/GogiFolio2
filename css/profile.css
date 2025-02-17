@@ -2,6 +2,7 @@
 
 .profile-info {
   margin-bottom: 25px;
+  margin-top: 30;
 }
 
 .profile-img {
@@ -24,6 +25,8 @@
 
 .profile {
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .profile-title {

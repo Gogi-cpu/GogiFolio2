@@ -1,6 +1,8 @@
 .skills {
   max-width: 980px;
   margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 5%;
 }
 
 .skills-title {
