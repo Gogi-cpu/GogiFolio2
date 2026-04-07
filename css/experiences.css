@@ -8,72 +8,206 @@
   background-color: var(--primary-color);
   color: var(--text-color-inverse);
   padding-bottom: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-
+.experiences-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+}
 
 .experiences-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
+  margin: 20px 0 30px 0;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .experience-date {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--secundary-color);
   text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .experience-company {
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 .experience-position {
-  font-weight: 500;
-  font-size: 18px;
-  margin-top: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 12px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .experience-description {
   font-weight: 400;
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 13px;
+  margin-top: 12px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .experience {
-  padding: 25px;
-  max-width: 500px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.experience:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.empty img,
+.experience-img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  aspect-ratio: 16 / 12.8;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 200px;
+  display: block;
   margin: 0 auto;
 }
 
-@media (min-width: 950px) {
+.line {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .experiences-body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
   .experiences-title {
-    font-size: 50px;
-    margin: 35px 0;
+    font-size: 28px;
+    margin: 30px 0 35px 0;
   }
 
   .experience-date {
-    font-size: 40px;
+    font-size: 18px;
   }
 
   .experience-company {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .experience-position {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 12px;
   }
 
   .experience-description {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .experience {
+    padding: 25px;
+  }
+  
+  .empty img,
+  .experience-img {
+    max-width: 360px;
+    aspect-ratio: 16 / 12.8;
+  
+  }
+
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    gap: 20px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .line {
+    display: block;
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+
+  .line::after {
+    top: 100%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 950px) {
+  .experiences-body {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  .experiences-title {
+    font-size: 32px;
+    margin: 40px 0 45px 0;
+  }
+
+  .experience-date {
     font-size: 20px;
-    margin-top: 10px;
-    line-height: 1.3;
+  }
+
+  .experience-company {
+    font-size: 16px;
+  }
+
+  .experience-position {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .experience-description {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
+  .empty img,
+  .experience-img {
+    max-width: 450px;
+    aspect-ratio: 16 / 12.8;
   }
 
   .experience {
@@ -85,16 +219,12 @@
   }
 
   .experiences-grid {
-    display: grid;
-    grid-template-columns: auto 2px auto;
     gap: 20px 70px;
     padding: 50px;
-    justify-content: center;
-    max-width: 980px;
-    margin: 0 auto;
   }
 
   .line {
+    display: block;
     background-color: var(--text-color-inverse);
     position: relative;
   }
@@ -116,5 +246,9 @@
   .line::after {
     top: 100%;
     z-index: 1;
+  }
+  
+  .empty img {
+    max-width: 500px;
   }
 }
