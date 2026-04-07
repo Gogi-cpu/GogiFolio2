@@ -62,7 +62,7 @@
 
 .menu a::after {
   content: "";
-  background-color: red;
+  background-color: beige;
   position: absolute;
   left: 0;
   top: calc(100% + 4px);
