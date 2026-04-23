@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GogiFolio2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
+    <script defer src="js/app.js"></script>
+    
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img src="img/professional-profile.jpg" alt="programador"/>
+          <div class="logotype">Gogi</div>
+        </a>
+
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Proyectos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+      <section class="profile" id="profile" >
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Joaquin Neira</h1>
+          <p class="profile-details" style="text-align: justify">
+            Ingeniero Informático. Soy proactivo, organizado y con buenas habilidades de trabajo en equipo, busco oportunidades para desarrollarme profesionalmente en el área informática.
+          </p>
+        </div>
+        <span class="profile-img-section">
+          <img
+            class="profile-img"
+            src="img/professional-profile.jpg"
+            alt="Joaquin Neira"
+          />
+        </span>
+      </section>
+
+
+
+
+
+
+
+    <section class="experiences" id="experience">
+        
+      <div class="experiences-body">
+          <h2 class="experiences-title">Proyectos</h2>
+          
+          
+          <div class="experiences-grid">
+            <div class="empty"><img class="experience-img" src="img/GogiFolio.png" alt="Gogi Folio 1"/></div>
+              <div class="line"></div>
+                <div class="experience">
+                  <div class="experience-date"><a class="experience-date" style="text-decoration: underline;" href="https://gogi-cpu.github.io/GogiFolio1/">Gogi Folio 1</a></div>
+                  <div style="display: flex;"></div>
+                  <div class="experience-position">Gogi Folio 01 es el primer intento de hacer un Portafolio.</div>
+                  <div class="experience-position">
+                    <ul class="skills-list">
+                      <li class="skills-skill"><img src="img/css.png" alt="CSS"/></li>
+                      <li class="skills-skill"><img src="img/html5.png" alt="HTML5"/></li>
+                      <li class="skills-skill"><img src="img/js.png" alt="JavaScript"/></li>
+                    </ul>
+                  </div>
+                </div>
+  
+        
+          <div class="experience experience_left">
+              <div class="experience-date"><a class="experience-date" style="text-decoration: underline;" href="https://github.com/Gogi-cpu/Geekmaps1.git">GeekMaps</a></div>            
+              <div class="experience-position" style="text-align: justify;">Geekmaps es un proyecto basado en python y Django que busca crear un epacio para promocionar y reunir Eventos Geeks. Con la funcionalidad adicional de mostrar la ubicacion y planificar un calendario de estos.</div>
+              <div class="experience-position">
+                <ul class="skills-list">
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/css.png" alt="programador"/></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/html5.png" alt="programador"/></li></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/django.png" alt="programador"/></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/mysql.png" alt="programador"/></li>
+                </ul>
+              </div>
+          </div>
+
+
+          <div class="line"></div>
+            <div class="empty"><img class="experience-img" src="img/GeekMaps.png" alt="GeekMaps"/></div>
+            <div class="empty"><img class="experience-img" src="img/GatoJuego.png" alt="GatoJuego"/></div>
+            <div class="line"></div>
+            <div class="experience">
+              <div class="experience-date"><a class="experience-date" style="text-decoration: underline;" href="https://drive.google.com/drive/folders/1V2gEnbEmAo7b5jFIgvmzUmL-LCKifm01?usp=sharing">GatoJuego</a></div>
+              <div style="display: flex;">        </div>
+              <div class="experience-position">El GatoJuego es un juego hecho en unity, el protagonista tiene como objetivo derrotar al rey rata.</div>
+              <div class="experience-position">
+                <ul class="skills-list">
+                  <li class="skills-skill"><img src="img/fotoC.png" alt="C#"/></li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="experience experience_left">
+              <div class="experience-date"><a class="experience-date" style="text-decoration: underline;" href="https://github.com/Gogi-cpu/Sika-SIIP">SikaSIIP</a></div>            
+              <div class="experience-position" style="text-align: justify;">Sika SIIP es una plataforma web desarrollada para digitalizar y centralizar la gestión de pedidos, inventario y despachos dentro de Sika en Chile.</div>
+              <div class="experience-position">
+                <ul class="skills-list">
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/css.png" alt="programador"/></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/html5.png" alt="programador"/></li></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/django.png" alt="programador"/></li>
+                  <li class="skills-skill"><img style="margin: 5px;" src="img/mysql.png" alt="programador"/></li>
+                </ul>
+              </div>
+          </div>
+          <div class="line"></div>
+            <div class="empty"><img class="experience-img" src="img/SikaSIIP.png" alt="SikaSIIP"/></div>
+    </section>
+
+    
+
+    
+    <section class="skills" id="skills">
+        <h2 class="skills-title">Lenguajes</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">
+            <img src="img/html5.png" alt="HTML5"/>
+            HTML 5</li>
+          <li class="skills-skill">
+            <img src="img/css.png" alt="CSS"/>
+            CSS</li>
+          <li class="skills-skill">
+            <img src="img/sql.png" alt="SQL"/>
+            SQL</li>
+          <li class="skills-skill">
+            <img src="img/fotoC.png" alt="C#"/>
+            C#</li>
+          <li class="skills-skill">
+            <img src="img/js.png" alt="JavaScript"/>
+            JavaScript</li>
+          <li class="skills-skill">
+            <img src="img/python.png" alt="Python"/>
+            Python</li>
+        </ul>
+        <h2 class="skills-title">Frameworks y Bibliotecas</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">
+            <img src="img/node.png" alt="Node.js"/>
+            Node.js</li>
+          <li class="skills-skill">
+            <img src="img/react.png" alt="React.js"/>
+            React.js</li>
+          <li class="skills-skill">
+            <img src="img/django.png" alt="Django"/>
+            Django</li>
+        </ul>
+        <h2 class="skills-title">Herramientas</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">
+            <img src="img/mysql.png" alt="MySQL"/>
+            MySQL</li>
+          <li class="skills-skill">
+            <img src="img/MDB.png" alt="MongoDB"/>
+            MongoDB</li>
+          <li class="skills-skill">
+            <img src="img/git.png" alt="Git/Github"/>
+            Git / Github</li>
+        </ul>
+    </section>
+
+    
+
+      <section class="contact" id="contact">
+        <h2 class="skills-title">Contacto</h2>
+        <ul class="skills-list">
+          <li class="skills-skill"><a href="mailto:joaquin.neira@hotmail.com"><img src="img/correo.png" alt="Correo"/>Correo</a></li>
+          <li class="skills-skill"><a href="https://github.com/Gogi-cpu"><img src="img/github.png" alt="Github"/>Github</a></li>
+          <li class="skills-skill"><a href=""><img src="img/instagram.png" alt="Instagram"/>Instagram</a></li>
+          <li class="skills-skill"><a href="https://www.linkedin.com/in/joaquin-neira-cabrera-170071227"><img src="img/linkedin.png" alt="Linkedin"/>Linkedin</a></li>
+        </ul>
+      </section>
+  </body> 
+</html>
